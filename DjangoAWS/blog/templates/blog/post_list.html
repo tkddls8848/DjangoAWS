@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>장고 블로그 포스트 페이지</title>
+</head>
+<body>
+
+{% for p in object_list %}
+    <h1>{{ p.title }}</h1>
+    {{p.context}}
+    <h5>author : {{ p.author }}</h5>
+{% endfor %}
+
+</body>
+</html>
